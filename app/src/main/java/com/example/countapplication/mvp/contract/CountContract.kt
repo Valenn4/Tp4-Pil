@@ -2,8 +2,9 @@ package com.example.countapplication.mvp.contract
 
 interface CountContract {
     interface View {
-        fun getValueIncrement(): Int
+        fun getValueIncrement(): String
         fun setValueCount(value: String)
+        fun showError()
         fun onClickIncrementButton(function: () -> Unit)
         fun onClickDecrementButton(function: () -> Unit)
         fun onClickResetButton(function: () -> Unit)

@@ -10,12 +10,20 @@ class CountPresenter(private var view: CountContract.View, private var model: Co
     }
 
     override fun onClickButtonIncrement(){
-        model.increment(view.getValueIncrement())
-        view.setValueCount(model.getValue())
+        if(view.getValueIncrement().isEmpty()){
+            view.showError()
+        } else {
+            model.increment(view.getValueIncrement().toInt())
+            view.setValueCount(model.getValue())
+        }
     }
     override fun onClickButtonDecrement(){
-        model.decrement(view.getValueIncrement())
-        view.setValueCount(model.getValue())
+        if(view.getValueIncrement().isEmpty()){
+            view.showError()
+        } else {
+            model.decrement(view.getValueIncrement().toInt())
+            view.setValueCount(model.getValue())
+        }
     }
     override fun onClickButtonReset(){
         model.reset()
