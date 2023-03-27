@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Counter PIL</string>
+    <string name="value_count">0</string>
+    <string name="value_increment_hint">Enter value</string>
+    <string name="button_increment">Increment</string>
+    <string name="button_decrement">Decrement</string>
+    <string name="button_reset">Reset</string>
+
+    <string name="error_message">Enter a value</string>
+</resources>
