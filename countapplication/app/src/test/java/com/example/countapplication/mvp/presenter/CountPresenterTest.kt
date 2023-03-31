@@ -4,6 +4,7 @@ import com.example.countapplication.mvp.contract.CountContract
 import com.example.countapplication.mvp.model.CountModel
 import io.mockk.*
 import io.mockk.impl.annotations.RelaxedMockK
+import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 
@@ -24,9 +25,9 @@ class CountPresenterTest {
 
     @Test
     fun `the user clicks on the increment button`() {
-        every { view.getValueInput() } returns "4"
+        every { view.getValueInput() } returns "2"
         presenter.onClickIncrementButton()
-        verify { view.setValueCount("4") }
+        verify { view.setValueCount("2") }
     }
     @Test
     fun `the user clicks on the decrement button`() {
@@ -37,7 +38,7 @@ class CountPresenterTest {
 
     @Test
     fun `the user clicks on the reset button`() {
-        every { view.getValueInput() } returns "4"
+        every { view.getValueInput() } returns "2"
         presenter.onClickResetButton()
         verify { view.setValueCount("0") }
     }

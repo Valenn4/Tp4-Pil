@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_size_title_app">40sp</dimen>
+    <dimen name="text_size_title_app">45sp</dimen>
     <dimen name="margin_top_title_app">20dp</dimen>
     <dimen name="padding_title_app">15dp</dimen>
 
     <dimen name="margin_top_value_counter">30dp</dimen>
-    <dimen name="text_size_value_counter">25sp</dimen>
+    <dimen name="margin_horizontal_value_counter">50dp</dimen>
+    <dimen name="text_size_value_counter">35sp</dimen>
+    <dimen name="padding_value_counter">20dp</dimen>
 
-    <dimen name="margin_top_value">5dp</dimen>
-    <dimen name="text_size_value">20sp</dimen>
+    <dimen name="margin_top_value_input">30dp</dimen>
+    <dimen name="margin_horizontal_value_input">50dp</dimen>
+    <dimen name="text_size_value_input">20sp</dimen>
+    <dimen name="padding_value_input">20dp</dimen>
 
     <dimen name="margin_top_buttons">10dp</dimen>
+    <dimen name="margin_horizontal_buttons">50dp</dimen>
     <dimen name="padding_reset_button">20dp</dimen>
 
 </resources>
