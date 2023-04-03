@@ -4,6 +4,7 @@ interface CountContract {
     interface View {
         fun getValueInput(): String
         fun setValueCount(value: String)
+        fun cleanInputTextAndFocus()
         fun showError()
         fun onClickIncrementButton(function: () -> Unit)
         fun onClickDecrementButton(function: () -> Unit)

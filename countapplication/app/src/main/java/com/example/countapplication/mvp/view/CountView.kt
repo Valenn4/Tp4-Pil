@@ -17,6 +17,10 @@ class CountView(activity: Activity): ActivityView(activity), CountContract.View 
     override fun setValueCount(value: String){
         binding.result.text = value
     }
+    override fun cleanInputTextAndFocus(){
+        binding.value.text.clear()
+        binding.value.clearFocus()
+    }
     override fun showError(){
         Toast.makeText(activity, activity?.getString(R.string.error_message), Toast.LENGTH_SHORT).show()
     }

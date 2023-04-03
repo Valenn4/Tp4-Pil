@@ -27,6 +27,7 @@ class CountPresenter(private var view: CountContract.View, private var model: Co
     }
     override fun onClickResetButton(){
         model.reset()
+        view.cleanInputTextAndFocus()
         view.setValueCount(model.getValue())
     }
 }
